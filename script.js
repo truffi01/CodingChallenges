@@ -1,16 +1,16 @@
 // return masked string
 function maskify(cc) {
-  
-    if (cc.length <= 4){
-      return cc
+    var maskedString = "";
+    for(var i = 0; i < cc.length - 4; i++) {
+      maskedString += "#";
     }
     
-    for (let i = cc.length-1 ; i >= 0; i--){
-      if (i[cc] > i[cc.length-5]){
-        i[cc] = '#'  
-      }
+    for(var j = 4; j >= 1; j--) {
+      var lastCharacter = cc.charAt(cc.length - j);
+      var lastNums = lastCharacter;
+      maskedString += lastNums;
     }
     
-    return cc;
+    return maskedString;
   }
 
