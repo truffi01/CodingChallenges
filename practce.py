@@ -1,8 +1,8 @@
 def maskify(cc):
     numberArray = list(cc)
     print(numberArray)
-    for number in range(len(numberArray) - 4):
-        number[numberArray] = '#'
+    for numbery in range(len(numberArray) - 4):
+        numberArray[numbery] = '#'
         
     result = ''.join(numberArray)
     
