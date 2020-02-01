@@ -14,3 +14,4 @@ function maskify(cc) {
     return maskedString;
   }
 
+answer
