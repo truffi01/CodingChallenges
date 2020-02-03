@@ -6,4 +6,4 @@ function pigIt(str) {
   }).join(' ');
 }
 
-pigIt("I love gummies!");
+console.log(pigIt("I love gummies!"));

@@ -1,11 +1,18 @@
-def maskify(cc):
-    numberArray = list(cc)
-    print(numberArray)
-    for numbery in range(len(numberArray) - 4):
-        numberArray[numbery] = '#'
-        
-    result = ''.join(numberArray)
-    
-    return result
+def works(x):
+    return x[1:] + x[0] + "ay"
 
-print(maskify("1234567"))
+def pig_it(text):
+    result = text.split(" ")
+
+    print(result)
+
+    finished = map(works, result)
+    finishedTwo = " ".join(finished)
+
+    print(finishedTwo) 
+
+
+
+
+
+print(pig_it("I love gummies!"))
