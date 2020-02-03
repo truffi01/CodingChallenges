@@ -1,17 +1,21 @@
 // return masked string
-function maskify(cc) {
-    var maskedString = "";
-    for(var i = 0; i < cc.length - 4; i++) {
-      maskedString += "#";
+function pigIt(str){
+  let result = str.split(" ");
+  console.log(result); 
+
+  for (let i=0; i<result.length; i++){
+    individualArray = result[i].split("");
+    console.log(individualArray)
+    for (let j=0; j<individualArray.length; j++){
+      if (individualArray.length === 1){
+        continue;
+      }
+      resultTwo = individualArray[j].shift();
+      console.log(resultTwo);
     }
-    
-    for(var j = 4; j >= 1; j--) {
-      var lastCharacter = cc.charAt(cc.length - j);
-      var lastNums = lastCharacter;
-      maskedString += lastNums;
-    }
-    
-    return maskedString;
   }
 
-answer
+
+}
+
+pigIt("I love gummies!");
