@@ -6,8 +6,8 @@ const isPP = function(n){
           return [i, j];
         } 
         if (n < i ** j) {
-          break;
-        }
+            break;
+          }
       }
     }
     return null;
