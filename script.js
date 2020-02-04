@@ -13,4 +13,4 @@ const isPP = function(n){
     return null;
   }
   
-  code wars solution
+console.log(isPP(81));
