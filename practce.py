@@ -1,18 +1,16 @@
-def works(x):
-    return x[1:] + x[0] + "ay"
+const isPP = function(n){
+  const max = Math.ceil(Math.sqrt(n));
+  for (let i = 2; i <= max; i++) {
+    for (let j = 2; j <= max; j++) {
+      if (n === i ** j) {
+        return [i, j];
+      } 
+      if (n < i ** j) {
+        break;
+      }
+    }
+  }
+  return null;
+}
 
-def pig_it(text):
-    result = text.split(" ")
-
-    print(result)
-
-    finished = map(works, result)
-    finishedTwo = " ".join(finished)
-
-    print(finishedTwo) 
-
-
-
-
-
-print(pig_it("I love gummies!"))
+code wars solution
