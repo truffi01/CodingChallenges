@@ -2,7 +2,6 @@ function tickets(peopleInLine){
   
   let twentyFive = []
   let fifty = []
-  let oneHundred = []
   
   for (let i = 0; i < peopleInLine.length; i++){
     if (peopleInLine[i] === 25){
