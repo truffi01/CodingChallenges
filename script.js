@@ -1,47 +1,28 @@
-function tickets(peopleInLine){
-  
-  let twentyFive = []
-  let fifty = []
-  
-  for (let i = 0; i < peopleInLine.length; i++){
-    if (peopleInLine[i] === 25){
-      twentyFive.push(peopleInLine[i])
+function tickets(peopleInLine) {
+  var bills = [0, 0, 0]
+  for (var i = 0; i < peopleInLine.length; i++) {
+    switch (peopleInLine[i]) {
+      case 25:
+        bills[0]++
+        break
+        
+      case 50:
+        bills[0]--
+        bills[1]++
+        break
+        
+      case 100:
+        bills[1] ? bills[1]-- : bills[0] -= 2
+        bills[0]--
+        break
     }
-    if (peopleInLine[i] === 50){
-      fifty.push(peopleInLine[i])
+    
+    if (bills[0] < 0) {
+      return 'NO'
     }
-
-    if (peopleInLine[i] === 50){
-      if (twentyFive.length>1){
-        twentyFive.pop();
-      }
-      else {
-        return "No"
-      }
-    }
-
-    if (peopleInLine[i] === 100){
-      if (twentyFive.length>1 && fifty.length>1){
-        twentyFive.pop();
-        fifty.pop();
-      }
-    }
-
-    if (peopleInLine[i] === 100){
-      if (twentyFive.length>2){
-        twentyFive.pop();
-        twentyFive.pop();
-        twentyFive.pop();
-        console.log("1")
-      }
-      else {
-        return "No"
-      }
-    }
-
-
   }
-  return 'Yes'
+  
+  return 'YES'
 }
   
 console.log(tickets([25,25,25,100]));
