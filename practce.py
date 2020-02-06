@@ -1,20 +1,19 @@
-def tickets(people):
-    change = []
-    try:
-        for cash in people:
-            if cash == 25:
-                change.append(25)
-            if cash == 50:
-                change.remove(25)
-                change.append(50)
-            if cash == 100 and (50 in change):
-                change.remove(50)
-                change.remove(25)
-            elif cash == 100:
-                change.remove(25)
-                change.remove(25)
-                change.remove(25)
-    except: 
-        return "NO"
-    else:
-        return "YES"
+
+def to_camel_case(text):
+    removed = text.replace('-', ' ').replace('_', ' ').split()
+    if len(removed) == 0:
+        return ''
+    return removed[0]+ ''.join([x.capitalize() for x in removed[1:]])
+
+
+
+
+
+
+
+
+
+
+print(to_camel_case("the-stealth-warrior"));
+print(to_camel_case("The_Stealth_Warrior"));
+print(to_camel_case("The_STEALTH_Warrior"));
