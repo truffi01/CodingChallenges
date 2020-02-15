@@ -3,7 +3,13 @@
   {
      public int GetSum(int a, int b)
      {
-       
-       return 0;
+       ArrayList Sum = new ArrayList(); 
+
+       for (int i = a; i <= b; i++)
+       {
+           
+       }
+
+
      }
   }
