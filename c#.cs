@@ -1,17 +1,13 @@
+
+ using System.Linq;
+
 namespace Solution
 {
   class Kata
     {
-    public static int find_it(int[] seq) 
+      public static int find_it(int[] seq) 
       {
-        ArrayList integerVowel = new ArrayList();
-
-        foreach (int odd in seq)
-        {
-          if 
-      
-        }
+        return seq.GroupBy(x => x).Single(g => g.Count() % 2 == 1).Key;
       }
-       
     }
 }
