@@ -7,9 +7,10 @@
 
        for (int i = a; i <= b; i++)
        {
-           i += Sum 
+           Sum += i; 
        }
 
+        
         return Sum; 
 
      }
