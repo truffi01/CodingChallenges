@@ -1,10 +1,11 @@
-namespace Solution
+using System.Collections.Generic;
+using System.Linq;
+using System;
+
+public class Kata
 {
-  class Kata
-    {
-      public static int binaryArrayToNumber(int[] BinaryArray)
-        {
-          //Code here
-        }
-    }
+  public static int Find(int[] integers)
+  {
+    return -1;
+  }
 }
