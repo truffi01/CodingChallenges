@@ -1,7 +1,7 @@
-function findOutlier(int){
-  var even = int.filter(a=>a%2==0);
-  var odd = int.filter(a=>a%2!==0);
-  return even.length==1? even[0] : odd[0];
-}
+const faces = new Set()
+for (let eyes of [':',';'])
+    for (let nose of ['-','~',''])
+        for (let mouth of [')','D'])
+            faces.add(eyes+nose+mouth)
 
-console.log(findOutlier([2,4,6,8,4,2,3]))
+countSmileys =(arr)=> arr.filter(x => faces.has(x)).length
