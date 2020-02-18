@@ -14,7 +14,7 @@ function solution(list){
 
     if (sortedList[i+2] - sortedList[i+1] + sortedList[i] === sortedList[i+1]){
       result.push(sortedList[i], sortedList[i+1],sortedList[i+2])
-      
+      i+=2;
     }
 
 
