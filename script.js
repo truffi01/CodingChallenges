@@ -16,11 +16,13 @@ function solution(list){
       result.push(sortedList[i] + "-" + sortedList[i+2])
       i+=2;
     }
-
+    else {
+      result.push(sortedList[i]);
+    }
 
   }
-console.log(result);
-
+  
+  return result; 
 }
 
 
