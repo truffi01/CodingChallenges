@@ -1,12 +1,12 @@
-using System.Collections.Generic;
-using System.Linq;
 using System;
-
 public class Kata
 {
-  public static int Find(int[] integers)
+  public static long NextSmaller(long n)
   {
-       return integers.Count(a=>a%2==1)>1?integers.Single(a=>a%2==0):integers.Single(a=>a%2==1);
-
+     
   }
 }
+
+nextSmaller(21) == 12
+nextSmaller(531) == 513
+nextSmaller(2071) == 2017
