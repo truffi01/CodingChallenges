@@ -3,7 +3,12 @@ public class Kata
 {
   public static long NextSmaller(long n)
   {
+     char[] DigitArray = n.ToString().ToCharArray();
      
+     var ints = DigitArray.Select(x => int.Parse(x.ToString()));
+     
+
+
   }
 }
 
