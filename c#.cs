@@ -1,8 +1,10 @@
-public class Dubstep
-    {
-        public static string SongDecoder(string input)
-        {
-          // Replace each "WUB" with space. Split into words. Toss empty words. Recombine with space in between.
-          return input.Replace("WUB", " ").Split(' ').Where(w => w.Length > 0).Aggregate((a, b) => a + " " + b);
-        }
-    }
+using System;
+public class Kata
+{
+  public static long FindNextSquare(long num)
+  {
+    double a=Math.Sqrt(num);
+    return (a==(int)a)?(long)Math.Pow(a+1,2) : -1;
+   
+  }
+}
