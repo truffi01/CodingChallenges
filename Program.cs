@@ -12,14 +12,9 @@ namespace practice
             Console.Read(); 
         }
 
-        public static long QueueTime(int[] customers, int n)
-        public static long QueueTime(int[] customers, int n)
+        public static int DontGiveMeFive(int start, int end)
         {
-        int[] till = new int[n];         
-        for(int i=0;i<customers.Length;i++){       
-            till[Array.IndexOf(till, till.Min())]+=customers[i];
-        }
-        return till.Max();
+            return Enumerable.Range(start, end-start+1).Count(x => !x.ToString().Contains("5"));
         }
     }
 }
